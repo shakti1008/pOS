@@ -1,0 +1,18 @@
+[package]
+name = "shakti1008/pos"
+version = "0.1.0"
+description = "POS app"
+
+[dependencies]
+"wasmer/nodejs" = "^20"
+
+[fs]
+"/src" = "./"
+
+[[command]]
+name = "script"
+module = "wasmer/nodejs:nodejs"
+runner = "wasi"
+
+[command.annotations.wasi]
+main-args = ["npm", "start"]   
