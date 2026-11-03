@@ -1,0 +1,4 @@
+kind: wasmer.io/App.v0
+name: pos
+owner: shakti1008
+package: shakti1008/pos   
